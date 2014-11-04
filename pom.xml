@@ -3,12 +3,12 @@
     <groupId>org.wso2.maven</groupId>
     <artifactId>carbon-p2-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.5.10-SNAPSHOT</version>
+    <version>1.5.10</version>
     <name>Maven P2 Profile Generation Plugin</name>
 
     <scm>
         <developerConnection>scm:git:https://github.com/Kishanthan/carbon-p2-plugin.git</developerConnection>
-     <tag>HEAD</tag>
+     <tag>carbon-p2-plugin-1.5.10</tag>
   </scm>
 
     <dependencies>
