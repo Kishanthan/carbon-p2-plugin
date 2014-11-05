@@ -84,19 +84,21 @@
                         <artifactId>maven-deploy-plugin</artifactId>
                 </plugin>
 
+<plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.3</version>
+        <extensions>true</extensions>
+        <configuration>
+              <serverId>nexus-releases</serverId>
+          <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+          <!-- update this to the correct id! -->
+          <stagingProfileId>7b3ee339ed6</stagingProfileId>
+        </configuration>
+      </plugin>
         </plugins>
     </build>
     <repositories>
-        <repository>
-			<id>sonatype-release</id>
-			<url>http://repository.sonatype.org/content/groups/sonatype-public-grid</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
         <repository>
             <id>dist-wso2</id>
             <name>WSO2 Standard Repository</name>
@@ -110,13 +112,13 @@
         </repository>
     </repositories>
     <distributionManagement>
-        <repository>
+        <!--repository>
             <id>nexus</id>
             <name>Nexus Staging Repo</name>
             <url>http://localhost:8081/nexus/service/local/staging/deploy/maven2</url>
-        </repository>
+        </repository-->
 
-        <!--repository>
+        <repository>
             <id>wso2-maven2-repository</id>
             <name>WSO2 Maven2 Repository</name>
             <url>scp://dist.wso2.org/home/httpd/dist.wso2.org/maven2/</url>
@@ -125,7 +127,7 @@
             <id>wso2-maven2-snapshot-repository</id>
             <name>WSO2 Maven2 Snapshot Repository</name>
             <url>scp://dist.wso2.org/home/httpd/dist.wso2.org/snapshots/maven2/</url>
-        </snapshotRepository-->
+        </snapshotRepository>
     </distributionManagement>
 	<properties>
 		<tycho.version>0.13.0</tycho.version>
