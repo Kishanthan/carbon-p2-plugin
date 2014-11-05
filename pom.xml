@@ -8,7 +8,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/Kishanthan/carbon-p2-plugin.git</developerConnection>
-     <tag>carbon-p2-plugin-1.5.11</tag>
+<tag>HEAD</tag>
   </scm>
 
     <dependencies>
