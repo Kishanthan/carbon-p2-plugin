@@ -7,7 +7,9 @@
     <name>Deployment Profile Generation</name>
 
     <scm>
+	<connection>scm:git:https://github.com/Kishanthan/carbon-p2-plugin.git</connection>
         <developerConnection>scm:git:https://github.com/Kishanthan/carbon-p2-plugin.git</developerConnection>
+	<url>scm:git:https://github.com/Kishanthan/carbon-p2-plugin.git</url>
 <tag>HEAD</tag>
   </scm>
 
@@ -77,7 +79,7 @@
                 <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-release-plugin</artifactId>
-                        <version>2.3</version>
+                        <version>2.5.1</version>
                 </plugin>
                 <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
