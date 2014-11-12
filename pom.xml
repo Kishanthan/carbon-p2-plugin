@@ -120,5 +120,6 @@
     </distributionManagement>
 	<properties>
 		<tycho.version>0.13.0</tycho.version>
+		<project.scm.id>my-server<project.scm.id>
 	</properties>
 </project>
